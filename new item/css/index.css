@@ -1,9 +1,13 @@
+body{
+	background-image: url(../pic/index/1-背景.jpg);
+}
 /*上方固定导航栏*/
 .top{
 	height: 50px;
 	position: fixed;
+	z-index: 999;
 	width: 100%;
-	background-color: white;
+	background-color: #F9F9F9;
 	box-shadow: 0px 5px 5px #ccc;
 	font-size: 25px;
 }
@@ -16,23 +20,42 @@
 .top img{
 	height: 50px;
 	float: left;
+	margin: 0 40px 0 5px;
 }
 .top .item{
 	float: left;
-	padding-left: 120px;
+	padding: 0 60px;
+	/* margin-left: 40px; */
 	line-height: 50px;
+}
+.top .item:hover{
+	background-color: #DDDAD8;
+}
+.top .item:first-child,.top .login{
+	background-color: #42505E ;
+	box-shadow: 5px 0 5px #CCCCCC;
 }
 .top .login{
 	line-height: 50px;	
 	float: right;
-	padding-right: 20px;
+	padding : 0 60px;
+}
+.top a{
+	text-decoration: none;
+}
+.top .mid a,.top .login a{
+	color:#DDDAD8 ;
+}
+.item:nth-child(2) a,
+.item:nth-child(3) a,
+.item:nth-child(4) a{
+	color: #4A5969;
 }
 /*主体部分*/
 main{
 	padding: 65px;
 	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	margin:0 auto;
 }
 .leftbody{
 	width: 850px;
@@ -45,6 +68,7 @@ main{
 }
 .news,.picrotation,.label,.activity{
 	box-shadow:0 0 10px 2px #ccc;
+	background-color: #F9F9F9;
 }
 /*照片轮转*/
 .picrotation{
@@ -76,12 +100,81 @@ main{
 .label{
 	height: 200px;
 	margin-bottom:10px;
+	padding:0 10px;
 }
+.frontHead{
+	float: left;
+	margin-top: 5px;
+	margin-left: -10px;
+	width: 7px;
+	height: 30px;
+	background-color: #4A5969;
+}
+.Head{
+	line-height: 40px;
+	font-size: 20px;
+	padding-left: 20px;
+	border-bottom: solid #DDDAD8 1px;
+	margin-bottom: 5px;
+}
+.label .items{
+	background-color: #DDDAD8;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 5px auto;
+	font-size: 18px;
+	display: inline-flex;
+}
+.label .items:hover{
+	background-color: #4A5969;
+	color: #DDDAD8;
+}
+/* 左边新闻 */
 .news{
+	padding: 0 10px;
+}
+.newsbox{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	flex-wrap:wrap;
+}
+.news .newslist{
+	width: 390px;
+	margin-bottom: 15px;
+	padding: 15px 5px;
+}
+.news .bftitle{
+	position: relative;
+	top: -10px;
+}
+.news .newstitle{
+	display: inline-block;
+	font-size: 18px;
+}
+.news .intropic{
+	width: 110px;
+	margin:10px 15px 0 0;
+}
+.news .newsintro{
+	margin-top: 10px;
+	line-height: 150%;
+}
+#h{
+	background-color: #4A5969;
+	width: 200px;
 	height: 200px;
 }
+/* 右边活动 */
 .activity{
-	height: 200px
+	padding: 0 10px;
 }
-
+.activity img{
+	width: 320px;
+	padding-bottom: 10px;
+}
+/* 最底下 */
+#floor{
+	height: 10px;
+}
 
