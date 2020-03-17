@@ -9,6 +9,11 @@ window.onload = function() {
 	login.onclick = function() {
 		log.style.display = "block";
 	}
+	//无法注册
+	var signup =  document.getElementById("signUp");
+	signup.onclick = function(){
+		alert("暂不开放注册功能");
+	}
 
 	// 导航栏点不开
 	var nav = document.getElementById("mid");

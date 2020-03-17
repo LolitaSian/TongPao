@@ -81,7 +81,7 @@ a {
 	top: 1px;
 }
 
-.log #dl {
+.log #signIn {
 	border-bottom: var(--darkcolor) solid 2px;
 }
 
@@ -150,7 +150,7 @@ a {
 
 .other .qrcode {
 	position: absolute;
-	top: 8px;
+	top: 0px;
 	left: 400px;
 }
 
@@ -296,14 +296,13 @@ main {
 	font-size: 20px;
 	padding-left: 20px;
 	border-bottom: solid var(--linecolor) 1px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
-
 .label .items {
 	background-color: var(--linecolor);
 	border-radius: 5px;
 	padding: 5px 10px;
-	margin: 5px auto;
+	margin: 0px 3px 8px 3px;
 	font-size: 18px;
 	display: inline-flex;
 }
@@ -328,33 +327,49 @@ main {
 .news .newslist {
 	width: 390px;
 	margin-bottom: 15px;
-	padding: 15px 5px;
+	padding: 15px 5px 15px 15px;
 }
 
 .news .bftitle {
 	position: relative;
-	top: -10px;
+	top: -40px;
 }
 
 .news .newstitle {
 	display: inline-block;
 	font-size: 18px;
+	line-height: 150%;
+	height: 50px;
+	width: 350px;
+	overflow: hidden;
 }
 
 .news .intropic {
 	width: 110px;
-	margin: 10px 15px 0 0;
+	margin: 10px 8px 0px 8px ;
 }
-
 .news .newsintro {
 	margin-top: 10px;
 	line-height: 150%;
+	width: 390px;
+	height: 75px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
+
+.news .newsintro::before{
+	content:"　　";
 }
 
 #h {
 	background-color: var(--darkcolor);
 	width: 200px;
 	height: 200px;
+}
+#floor{
+	height: 20px;
 }
 
 /* 右边活动 */
@@ -369,9 +384,4 @@ main {
 
 .activity img:hover {
 	box-shadow: #ccc 5px 5px 5px;
-}
-
-/* 最底下 */
-#floor {
-	height: 10px;
 }
