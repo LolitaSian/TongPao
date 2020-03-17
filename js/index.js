@@ -21,7 +21,7 @@ window.onload = function() {
 
 	//设置picbox宽，使图片横向排列
 	var imglist = document.getElementById("picbox");
-	var imgArr = document.getElementsByTagName("img");
+	var imgArr = imglist.getElementsByTagName("img");
 	imglist.style.width = 850 * imgArr.length + "px";
 
 	//设置轮转图片底下的导航居中
