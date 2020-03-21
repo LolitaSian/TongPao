@@ -43,7 +43,7 @@ a {
 	position: relative;
 	top: -10px;
 	left: 80px;
-	color: ;
+	color:var(--darkcolor) ;
 }
 
 .toppic #close:hover {
