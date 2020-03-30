@@ -1,0 +1,211 @@
+:root {
+	--lightcolor: #F9F9F9;
+	--darkcolor: #4A5969;
+	--linecolor: #DDDAD8;
+}
+main {
+	padding: 65px 0;
+	width: 1200px;
+	margin: 0 auto;
+}
+body {
+	background-image: url(../pic/index/1-背景.jpg);
+}
+
+a {
+	color: var(--darkcolor);
+	text-decoration: none;
+}
+
+/* 登录 */
+.log {
+	width: 100%;
+	height: 150%;
+	background-color: rgba(0, 0, 0, 50%);
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+
+.logbox {
+	width: 450px;
+	height: 350px;
+	background-color: var(--lightcolor);
+	margin: 150px auto;
+	border: solid var(--linecolor) 1px;
+	padding: 10px;
+}
+
+.log .toppic {
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.toppic #close {
+	position: relative;
+	top: -10px;
+	left: 80px;
+	color:var(--darkcolor) ;
+}
+
+.toppic #close:hover {
+	color: var(--linecolor);
+}
+
+.log .toppic .pic {
+	height: 40px;
+}
+
+.log .logbtn {
+	font-size: 20px;
+	border-bottom: var(--linecolor) solid 1px;
+	margin: 5px 15px;
+}
+
+.log .ipt {
+	text-align: center;
+}
+
+.log .username,
+.password {
+	margin-top: 20px;
+	border: var(--linecolor) solid 1px;
+	height: 40px;
+	width: 350px;
+	font-size: 22px;
+}
+
+.log .logbtn p {
+	display: inline-block;
+	padding: 7px;
+	margin-left: 5px;
+	position: relative;
+	top: 1px;
+}
+
+.log #signIn {
+	border-bottom: var(--darkcolor) solid 2px;
+}
+
+.log .ck {
+	padding: 10px 50px;
+	height: 25px;
+}
+
+.ck input {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+#jz {
+	float: left;
+}
+
+#zh {
+	float: right;
+}
+
+#jz,
+#zh {
+	padding-top: 5px;
+}
+
+#zh:hover {
+	color: var(--linecolor);
+}
+
+.submit {
+	background-color: var(--darkcolor);
+	color: var(--linecolor);
+	height: 40px;
+	width: 350px;
+	font-size: 20px;
+}
+
+.submit:hover {
+	background-color: var(--linecolor);
+	color: var(--darkcolor);
+}
+
+.other {
+	padding: 20px 0 0 50px;
+	position: relative;
+}
+
+.oc i {
+	padding-left: 30px;
+	font-size: 25px;
+}
+
+.oc i:nth-child(1) {
+	color: #0188FB;
+}
+
+.oc i:nth-child(2) {
+	color: #1AA034;
+}
+
+.oc i:nth-child(3) {
+	color: #CF1F00;
+}
+
+.other .qrcode {
+	position: absolute;
+	top: 0px;
+	left: 400px;
+}
+
+/*上方固定导航栏*/
+.top {
+	height: 50px;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	background-color: var(--lightcolor);
+	box-shadow: 0px 5px 5px #ccc;
+	font-size: 25px;
+}
+
+.top .navi {
+	height: 50px;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top img {
+	height: 50px;
+	float: left;
+	margin: 0 40px 0 5px;
+}
+
+.top .item {
+	float: left;
+	padding: 0 60px;
+	/* margin-left: 40px; */
+	line-height: 50px;
+}
+
+.top .item:hover {
+	background-color: var(--linecolor);
+}
+
+.top .login {
+	background-color: var(--darkcolor);
+	box-shadow: 5px 0 5px #CCCCCC;
+	line-height: 50px;
+	float: right;
+	padding: 0 60px;
+}
+
+#mid a,
+#loginbtn a {
+	color: var(--linecolor);
+}
+
+#mid .item a {
+	color: var(--darkcolor);
+}

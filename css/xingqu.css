@@ -1,0 +1,67 @@
+.top .item:nth-child(3) {
+	background-color: var(--darkcolor);
+	box-shadow: 5px 0 5px #CCCCCC;
+}
+
+#mid .item:nth-child(3) a {
+	color: var(--lightcolor);
+}
+
+main {
+	display: flex;
+}
+
+.posts {
+	width: 585px;
+	background-color: var(--lightcolor);
+	box-shadow: 0 0 10px 2px #ccc;
+	border-radius: 5px;
+	margin: 10px;
+	display: flex;
+}
+
+.posts .remark {
+	width: 45px;
+	height: 25px;
+	background-color: var(--linecolor);
+	border-radius: 40px 40px 0 40px;
+	text-align: center;
+	line-height: 25px;
+	margin: 10px;
+}
+
+.posts .message {
+	margin: 10px 0;
+	width: 500px;
+	line-height: 200%;
+	position: relative;
+}
+
+.posts .message h1 {
+	font-size: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.posts .message p {
+	margin: 5px 0;
+}
+
+.posts .message .imgsbox{
+	display: flex;
+	width: 480px;
+	justify-content: space-evenly;
+}
+.posts .message img{
+	border-radius: 5px;
+	margin: 5px;
+}
+.posts .message i {
+	padding: 0 10px;
+}
+
+.posts .message span:last-of-type{
+	position: absolute;
+	left: 50%;
+}

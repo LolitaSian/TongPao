@@ -1,0 +1,103 @@
+.top .item:nth-child(2) {
+	background-color: var(--darkcolor);
+	box-shadow: 5px 0 5px #CCCCCC;
+}
+
+#mid .item:nth-child(2) a {
+	color: var(--lightcolor);
+}
+
+main {
+	display: flex;
+}
+
+/*****************************************/
+.left {
+	width: 850px;
+	flex-shrink: 1;
+	padding: 10px 20px;
+	line-height: 200%;
+	background-color: var(--lightcolor);
+	box-shadow: 0 0 10px 2px #ccc;
+}
+
+.articleBox {
+	display: flex;
+	padding: 20px 0;
+}
+
+.articleBox img {
+	border-radius: 5px;
+}
+
+.left .article {
+	margin-left: 15px;
+}
+
+.left .article span {
+	border-radius: 5px;
+	background-color: var(--darkcolor);
+	color: var(--lightcolor);
+	padding: 5px 10px;
+}
+
+.left .article .catalogue {
+	margin-left: 10px;
+	background-color: var(--linecolor);
+	color: var(--darkcolor);
+}
+
+.left .article h1 {
+	font-size: 22px;
+	padding: 5px 0;
+}
+
+.left .article .art {
+	height: 130px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+}
+
+
+/*****************************/
+aside {
+	margin-left: 15px;
+	padding: 0 10px;
+	width: 300px;
+	box-shadow: 0 0 10px 2px #ccc;
+	background-color: var(--lightcolor);
+	height: 360px;
+}
+
+.frontHead {
+	float: left;
+	margin-top: 5px;
+	margin-left: -10px;
+	width: 7px;
+	height: 30px;
+	background-color: var(--darkcolor);
+}
+
+.Head {
+	line-height: 40px;
+	font-size: 20px;
+	padding-left: 20px;
+	border-bottom: solid var(--linecolor) 1px;
+}
+
+aside li {
+	font-size: 18px;
+	line-height: 150%;
+	padding: 5px 10px;
+}
+
+aside li i {
+	padding-right: 5px;
+	font-size: 12px;
+}
+
+aside a:hover i {
+	font-size: 18px;
+}

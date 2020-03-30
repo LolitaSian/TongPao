@@ -1,7 +1,8 @@
 window.onload = function() {
-	// 登录界面打开关闭
 	var log = document.getElementById("log");
 	var close = document.getElementById("close");
+	
+	//打开关闭登录框
 	close.onclick = function() {
 		log.style.display = "none";
 	}
@@ -9,21 +10,13 @@ window.onload = function() {
 	login.onclick = function() {
 		log.style.display = "block";
 	}
+	
 	//无法注册
 	var signup =  document.getElementById("signUp");
 	signup.onclick = function(){
 		alert("暂不开放注册功能");
 	}
-
-	// 导航栏点不开
-	var nav = document.getElementById("mid");
-	var navitems = nav.getElementsByTagName("div");
-	for (var i = 1; i < navitems.length; i++) {
-		navitems[i].onclick = function() {
-			alert("太忙了，我还没写完的了");
-		}
-	}
-
+	
 	//设置picbox宽，使图片横向排列
 	var imglist = document.getElementById("picbox");
 	var imgArr = imglist.getElementsByTagName("img");
@@ -74,9 +67,10 @@ window.onload = function() {
 		function() {
 			index = (index+1)%imgArr.length;
 			move(imglist, "left", -850 * index, 20, function() {
-				console.log(index);
 				setPointColor();
 			});
 		}, 2000);
 	}
+	
+	
 }
